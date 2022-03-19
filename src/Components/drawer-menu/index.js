@@ -8,7 +8,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 
 // components
-// import ButtonAppBar from '../AppBar';
+import ButtonAppBar from '../AppBar';
 
 const useStyles = makeStyles({
   list: {
@@ -44,14 +44,13 @@ export default function TemporaryDrawer() {
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = (open_) => {
-    console.log(open_);
     setOpen(open_);
   };
 
   // console.log(list);
   return (
     <div>
-      {/* <ButtonAppBar toggleDrawer={toggleDrawer} /> */}
+      <ButtonAppBar toggleDrawer={toggleDrawer} />
       <React.Fragment key={0}>
         <Drawer anchor="left" open={open} onClose={() => toggleDrawer(false)}>
           <ListComp toggleDrawer={toggleDrawer} />

@@ -19,8 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ButtonAppBar(toggleDrawer) {
-  console.log(toggleDrawer);
+export default function ButtonAppBar({ toggleDrawer }) {
   const classes = useStyles();
   return (
     <div className={classes.root}>
