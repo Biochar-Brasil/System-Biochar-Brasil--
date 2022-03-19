@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import routes from './routes';
