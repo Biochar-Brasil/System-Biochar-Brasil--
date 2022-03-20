@@ -8,7 +8,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 
 // components
-import ButtonAppBar from '../AppBar';
+import ButtonAppBar from '../app-bar';
 
 const useStyles = makeStyles({
   list: {
