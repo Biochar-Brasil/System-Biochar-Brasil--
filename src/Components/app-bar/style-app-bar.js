@@ -30,9 +30,14 @@ const IconMenuContent = styled(Grid)`
 
 const DropDownContent = styled(Grid)`
   color: black;
-  align-items: right; //centraliza horizontalmente
-  background-color: red;
-  justify-content: center; //cetraliza verticalmente
+  & > button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    justify-content: center; //cetraliza verticalmente
+    display: flex;
+    align-items: center;
+  }
 `;
 
 export { LogoContent, TopBar, IconMenuContent, DropDownContent };

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import TemporaryDrawer from './Components/drawer-menu';
 import routes from './routes';
 
 // Crie seu próprio tema:
@@ -18,6 +19,7 @@ const theme = createMuiTheme({
 function App() {
   return (
     <MuiThemeProvider theme={theme}>
+      <TemporaryDrawer />
       <BrowserRouter>
         <Routes>
           {routes.map((route) => (

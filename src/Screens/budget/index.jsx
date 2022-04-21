@@ -4,7 +4,6 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 
 // components
-import TemporaryDrawer from '../../Components/drawer-menu';
 import PageContent from '../../Components/page-content';
 import Title from '../../Components/typography/title';
 import TableBC from '../../Components/table';
@@ -39,7 +38,6 @@ const rows = [
 function Budget() {
   return (
     <div>
-      <TemporaryDrawer />
       <PageContent>
         <Grid item xs={12}>
           <Title>Gerador de Orçamento</Title>

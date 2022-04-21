@@ -71,7 +71,7 @@ export default function ButtonAppBar({ toggleDrawer }) {
             </LogoContent>
             <DropDownContent item xs={3}>
               <Button aria-controls="simple-menu" onClick={handleClick}>
-                Open Menu
+                Usuário
               </Button>
               <Menu
                 id="simple-menu"
