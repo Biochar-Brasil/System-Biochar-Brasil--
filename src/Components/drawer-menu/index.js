@@ -9,10 +9,11 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
 
 // components
 import ButtonAppBar from '../app-bar';
+import DropDown from '../button-dropdown';
 
 const useStyles = makeStyles({
   list: {
-    width: 250,
+    width: 300,
   },
   fullList: {
     width: 'auto',
@@ -20,6 +21,17 @@ const useStyles = makeStyles({
 });
 
 function ListComp(toggleDrawer) {
+  const DropDownCommercial = [
+    'Gerador de orçamento',
+    'Rotas de vendas',
+    'Clientes',
+    'Gerador de pedidos',
+  ];
+
+  const DropDownExpedition = ['Pedidos'];
+
+  const DropDownPurchases = ['Fornecedores'];
+
   const classes = useStyles();
   return (
     <div
@@ -33,9 +45,37 @@ function ListComp(toggleDrawer) {
           <ListItemIcon>
             <InboxIcon />
           </ListItemIcon>
-          <ListItemText primary="Gerar Orçamento" />
+          <ListItemText primary="Home" />
+        </ListItem>
+        <ListItem button key="1">
+          <ListItemIcon>
+            <InboxIcon />
+          </ListItemIcon>
+          <ListItemText primary="Colaboradores" />
+        </ListItem>
+
+        <ListItem button key="2">
+          <DropDown title="Comercial" childrenDropDown={DropDownCommercial} />
+        </ListItem>
+        <ListItem button key="3">
+          <DropDown title="Expedição" childrenDropDown={DropDownExpedition} />
+        </ListItem>
+        <ListItem button key="4">
+          <DropDown title="Compras`" childrenDropDown={DropDownPurchases} />
         </ListItem>
       </List>
+      <ListItem button key="5">
+        <ListItemIcon>
+          <InboxIcon />
+        </ListItemIcon>
+        <ListItemText primary="Treinamentos" />
+      </ListItem>
+      <ListItem button key="6">
+        <ListItemIcon>
+          <InboxIcon />
+        </ListItemIcon>
+        <ListItemText primary="Documentos" />
+      </ListItem>
     </div>
   );
 }
