@@ -9,7 +9,7 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
 
 // components
 import ButtonAppBar from '../app-bar';
-import DropDown from '../button-dropdown';
+import DropDown from '../button-dropdown-drawer';
 
 const useStyles = makeStyles({
   list: {
