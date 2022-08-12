@@ -19,7 +19,7 @@ const theme = createMuiTheme({
 function App() {
   return (
     <MuiThemeProvider theme={theme}>
-      <TemporaryDrawer />
+      {window.location.pathname !== '/partner' && <TemporaryDrawer />}
       <BrowserRouter>
         <Routes>
           {routes.map((route) => (

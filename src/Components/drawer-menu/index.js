@@ -51,7 +51,9 @@ function ListComp(toggleDrawer) {
           <ListItemIcon>
             <InboxIcon />
           </ListItemIcon>
-          <ListItemText primary="Colaboradores" />
+          <a href="colaboradores">
+            <ListItemText primary="Colaboradores" />
+          </a>
         </ListItem>
 
         <ListItem button key="2">
